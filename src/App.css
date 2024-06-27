@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=family=Kaushan+Script&display=swap');
 
+* {
+  font-family: "Kalam", cursive;
+}
+
 .main-wrapper {
-  background: url('/public/images/bg.png');
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.main-bg {
+  background: url('/public/images/bg-min.png');
+  background-position: center top;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
 }
 
 .container {
@@ -14,17 +25,80 @@
 }
 
 .title {
+  position: fixed;
   font-family: "Kaushan Script", cursive;
   padding: 2rem 3rem;
   text-align: center;
   font-size: 7rem;
-  color: #256e25;
+  color: #397b6b;
+  border: 10px solid;
+  border-radius: 25px;
+  border-style: double;
+  backdrop-filter: blur(3px);
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.main-text-wrapper {
+  margin: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+  max-width: calc(600px - 4rem);
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 250px;
+  max-height: 420px;
+  overflow: scroll;
+}
+
+.lastname {
+  font-size: 4.5rem;
+}
+
+.dragon {
+  position: absolute;
+  animation: MoveUpDown 5s linear infinite;
+  width: 150px;
+  left: -150px;
+  bottom: -120px;
+}
+
+.hugo {
+  position: fixed;
+  width: 20%;
+  right: 7%;
+  bottom: 15%;
+}
+
+.picnic {
+  position: fixed;
+  width: 75%;
+  min-width: 750px;
+  left: -10%;
+  bottom: 2%;
+}
+
+.birth-details-wrapper {
+  color: #397b6b;
   border: 10px solid;
   border-radius: 25px;
   border-style: double;
   backdrop-filter: blur(3px);
 }
 
-.lastname {
-  font-size: 5rem;
+@keyframes MoveUpDown {
+
+  0%,
+  100% {
+    bottom: -120px;
+    left: -150px;
+  }
+
+  50% {
+    bottom: -160px;
+    left: -170px;
+  }
 }
