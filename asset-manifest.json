@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/welcome-leo/static/css/main.efb7362e.css",
+    "main.js": "/welcome-leo/static/js/main.a52ea11e.js",
+    "static/js/453.02fbc45e.chunk.js": "/welcome-leo/static/js/453.02fbc45e.chunk.js",
+    "static/media/bg.png": "/welcome-leo/static/media/bg.3b7194a7faeb0232bfcf.png",
+    "index.html": "/welcome-leo/index.html",
+    "main.efb7362e.css.map": "/welcome-leo/static/css/main.efb7362e.css.map",
+    "main.a52ea11e.js.map": "/welcome-leo/static/js/main.a52ea11e.js.map",
+    "453.02fbc45e.chunk.js.map": "/welcome-leo/static/js/453.02fbc45e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efb7362e.css",
+    "static/js/main.a52ea11e.js"
+  ]
+}
