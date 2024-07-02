@@ -12,13 +12,20 @@ export default function App() {
             Baby Borrel
           </h1>
           <div className='event-date'>
-            <span>September</span>
+            <span>August</span>
             <div className='middle'>
               <span className='lined'>Sunday</span>
               <span className='day'>25</span>
               <span className='lined'>At 14:00</span>
             </div>
             <span>2024</span>
+          </div>
+          <div className="event-date-mobile">
+            <span>Sunday</span>
+            <span>25th</span>
+            <span>August</span>
+            <span>2024</span>
+            <span>At 14:00</span>
           </div>
           <div className='location-wrapper'>
             <p className='location-content'>

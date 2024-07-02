@@ -80,3 +80,86 @@
   border-radius: 14px;
   margin: 2rem;
 }
+
+.event-date-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .h1 {
+    font-size: 4rem;
+  }
+
+  .content {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .h1 {
+    line-height: 3rem;
+    font-size: 3rem;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-date {
+    font-size: 1.5rem;
+  }
+
+  .event-date .middle {
+    font-size: 1rem;
+  }
+
+  .event-date .day {
+    font-size: 3rem;
+  }
+
+  .location-content {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h1 {
+    line-height: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event-date {
+    display: none;
+  }
+
+  .location-content {
+    font-size: 1.2rem;
+  }
+
+  .content {
+    width: 100%;
+    margin: 3rem auto;
+  }
+
+  .event-date-mobile {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 6px;
+    max-width: 50%;
+    margin: 0 auto 2rem;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    backdrop-filter: var(--primary-blur);
+  }
+}

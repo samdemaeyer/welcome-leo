@@ -6,10 +6,9 @@ import './MainBg.css'
 
 export const MainBg: FC<PropsWithChildren> = ({ children }) =>
   <main>
-    <img src={hugo} alt="hugo running" className='hugo' />
+    <img src={hugo} alt="Hugo running" className='hugo' />
     <img src={picnic} alt="Kira, Sam and Leo at a picnic" className='picnic' />
     <img src={dragon} alt="Draggon hovering london" className='dragon' />
-    <div className="main-bg">
-    </div>
+    <div className="main-bg" />
     {children}
   </main>
