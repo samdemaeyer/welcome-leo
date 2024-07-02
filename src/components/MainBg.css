@@ -1,0 +1,51 @@
+@keyframes DragonHover {
+
+  0%,
+  100% {
+    top: 120px;
+    left: 150px;
+  }
+
+  50% {
+    top: 160px;
+    left: 170px;
+  }
+}
+
+
+.main-bg {
+  top: 0;
+  left: 0;
+  background: url('/public/images/bg-min.png');
+  background-position: center top;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.dragon {
+  position: absolute;
+  animation: DragonHover 5s linear infinite;
+  width: 150px;
+  left: -150px;
+  bottom: -120px;
+  z-index: 500;
+}
+
+.hugo {
+  position: fixed;
+  width: 20%;
+  right: 7%;
+  bottom: 15%;
+  z-index: 500;
+}
+
+.picnic {
+  position: fixed;
+  width: 75%;
+  min-width: 750px;
+  left: -10%;
+  bottom: 2%;
+  z-index: 500;
+}
