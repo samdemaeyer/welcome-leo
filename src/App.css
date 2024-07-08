@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 :root {
   --primary-color: #367b6d;
   --primary-blur: blur(4px);
@@ -23,6 +22,51 @@
   line-height: 5rem;
   margin-bottom: 4rem;
   backdrop-filter: var(--primary-blur);
+}
+
+.h1 .baby-borrel-info-button {
+  background: none;
+  border: none;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+.h1 .baby-borrel-info-button:hover {
+  cursor: pointer;
+}
+
+.h1 .baby-borrel-info-button i {
+  font-size: 2rem;
+  position: absolute;
+}
+
+.address-info-button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+}
+
+.address-info-button i {
+  position: absolute;
+  font-size: 1rem;
+  padding-left: 4px;
+}
+
+.address-info-button:hover {
+  cursor: pointer;
+}
+
+.react-responsive-modal-modal {
+  font-family: "Roboto", cursive;
+  text-transform: none;
+  color: var(--primary-color);
+  border: 10px double var(--primary-color);
+  border-radius: 14px;
+}
+
+.react-responsive-modal-closeButton {
+  top: 4px;
+  right: 4px;
 }
 
 .h2 {
@@ -64,29 +108,33 @@
 
 .location-wrapper {
   display: flex;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.location-content {
+.location-content,
+.address-info-button {
   backdrop-filter: var(--primary-blur);
   font-size: 1.75rem;
 }
 
 .frame-border {
-  width: calc(100vw - 4rem);
-  height: calc(100vh - 4rem);
+  width: calc(100vw - 20px - 4rem);
+  height: calc(100vh - 20px - 4rem);
   border: 10px double var(--primary-color);
   border-radius: 14px;
   margin: 2rem;
 }
 
-.event-date-mobile {
-  display: none;
+.map-iframe {
+  width: 600px;
+  height: 450px;
 }
 
 @media screen and (max-width: 1080px) {
-  .h1 {
+
+  .h1,
+  .h1 .baby-borrel-info-button {
     font-size: 4rem;
   }
 
@@ -96,7 +144,9 @@
 }
 
 @media screen and (max-width: 776px) {
-  .h1 {
+
+  .h1,
+  .h1 .baby-borrel-info-button {
     line-height: 3rem;
     font-size: 3rem;
   }
@@ -124,22 +174,24 @@
   .content {
     width: 400px;
   }
+
+  .map-iframe {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .h1 {
+
+  .h1,
+  .h1 .baby-borrel-info-button {
     line-height: 2rem;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .h2 {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-  }
-
-  .event-date {
-    display: none;
   }
 
   .location-content {
@@ -151,15 +203,143 @@
     margin: 3rem auto;
   }
 
-  .event-date-mobile {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid;
-    border-radius: 6px;
-    max-width: 50%;
-    margin: 0 auto 2rem;
-    padding: .5rem 0;
-    font-size: 1.2rem;
-    backdrop-filter: var(--primary-blur);
+  .frame-border {
+    width: calc(100vw - 20px - 2rem);
+    height: calc(100vh - 20px - 2rem);
+    margin: 1rem;
+  }
+
+  .h1 .baby-borrel-info-button {
+    font-size: 2rem;
+  }
+
+  .h1 .baby-borrel-info-button i {
+    font-size: 1rem;
+  }
+
+  .address-info-button {
+    font-size: 1.25rem;
+  }
+
+  .address-info-button i {
+    font-size: 1rem;
+  }
+
+  .event-date {
+    font-size: 1.25rem;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .event-date .day {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .event-date .lined {
+    min-width: 80px;
+    border-width: 2px;
+  }
+
+  .event-date .middle {
+    padding: .75rem 1rem;
+  }
+}
+
+@media screen and (max-height: 1000px) and (orientation: landscape) {
+
+  .content,
+  .event-date {
+    margin-top: 2rem;
+  }
+
+  .h1,
+  .h2 {
+    margin-bottom: 2rem;
+  }
+
+  .h1,
+  .h1 .baby-borrel-info-button {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-height: 770px) and (orientation: landscape) {
+
+  .event-date {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+  }
+
+  .h1,
+  .h2 {
+    margin-bottom: 1rem;
+  }
+
+  .h1,
+  .h1 .baby-borrel-info-button {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-height: 670px) and (orientation: landscape) {
+  .heading-break {
+    display: none;
+  }
+
+  .content {
+    margin-top: 1rem;
+  }
+
+  .event-date {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .event-date .middle {
+    font-size: 1rem;
+    padding: .25rem 4rem;
+  }
+
+  .event-date .day {
+    font-size: 2.75rem;
+  }
+
+  .h1,
+  .h1 .baby-borrel-info-button {
+    font-size: 2rem;
+    line-height: 1.75rem;
+  }
+
+  .h1 .baby-borrel-info-button i {
+    font-size: 1rem;
+  }
+
+  .h2 {
+    font-size: 1.25rem;
+  }
+
+  .event-date {
+    font-size: 1.25rem;
+  }
+
+  .location-content,
+  .address-info-button {
+    font-size: 1.25rem;
+  }
+
+  .address-info-button i {
+    font-size: .75rem;
+  }
+
+  .frame-border {
+    width: calc(100vw - 20px - 2rem);
+    height: calc(100vh - 20px - 2rem);
+    margin: 1rem;
+  }
+
+  .map-iframe {
+    height: auto;
   }
 }

@@ -18,6 +18,7 @@
   left: 0;
   background: url('/public/images/bg-min.png');
   background-position: center top;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -72,6 +73,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  @keyframes DragonHover {
+
+    0%,
+    100% {
+      top: 17px;
+      left: 17px;
+    }
+
+    50% {
+      top: 30px;
+      left: 30px;
+    }
+  }
+
   .dragon {
     width: 70px;
   }
@@ -83,5 +98,56 @@
 
   .hugo {
     width: 27%;
+  }
+}
+
+
+@media screen and (max-height: 1000px) and (orientation: landscape) {
+  .picnic {
+    left: -2%;
+    width: 800px;
+  }
+
+  .hugo {
+    width: 220px;
+  }
+}
+
+@media screen and (max-height: 770px) and (orientation: landscape) {
+  .picnic {
+    left: -10%;
+    width: 800px;
+  }
+}
+
+@media screen and (max-height: 670px) and (orientation: landscape) {
+  @keyframes DragonHover {
+
+    0%,
+    100% {
+      top: 35px;
+      left: 35px;
+    }
+
+    50% {
+      top: 45px;
+      left: 45px;
+    }
+  }
+
+  .dragon {
+    width: 100px;
+    top: 35px;
+    left: 35px;
+  }
+
+  .hugo {
+    width: 130px;
+  }
+
+  .picnic {
+    left: -10%;
+    width: 450px;
+    min-width: auto;
   }
 }
