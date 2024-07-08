@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9526703.css",
-    "main.js": "/static/js/main.8193238d.js",
+    "main.css": "/static/css/main.e74cff13.css",
+    "main.js": "/static/js/main.ada4f076.js",
     "static/js/453.02fbc45e.chunk.js": "/static/js/453.02fbc45e.chunk.js",
     "static/media/bg-min.png": "/static/media/bg-min.141e3ba76c631a0527f5.png",
+    "static/media/geboortekaartje_US_achterkant.jpg": "/static/media/geboortekaartje_US_achterkant.c44c35e503796e62e454.jpg",
+    "static/media/geboortekaartje_US_voorkant.jpg": "/static/media/geboortekaartje_US_voorkant.5720ce7352158391302b.jpg",
     "static/media/picnic.png": "/static/media/picnic.74687b889641eb413336.png",
     "static/media/hugo.png": "/static/media/hugo.7c619c8b81cfd6ba8c01.png",
     "static/media/dragon.png": "/static/media/dragon.ef47d9e0628be6078171.png",
     "index.html": "/index.html",
-    "main.b9526703.css.map": "/static/css/main.b9526703.css.map",
-    "main.8193238d.js.map": "/static/js/main.8193238d.js.map",
+    "main.e74cff13.css.map": "/static/css/main.e74cff13.css.map",
+    "main.ada4f076.js.map": "/static/js/main.ada4f076.js.map",
     "453.02fbc45e.chunk.js.map": "/static/js/453.02fbc45e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9526703.css",
-    "static/js/main.8193238d.js"
+    "static/css/main.e74cff13.css",
+    "static/js/main.ada4f076.js"
   ]
 }
