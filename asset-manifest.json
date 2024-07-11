@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e74cff13.css",
-    "main.js": "/static/js/main.ada4f076.js",
+    "main.css": "/static/css/main.07ddaca8.css",
+    "main.js": "/static/js/main.546a64b6.js",
     "static/js/453.02fbc45e.chunk.js": "/static/js/453.02fbc45e.chunk.js",
     "static/media/bg-min.png": "/static/media/bg-min.141e3ba76c631a0527f5.png",
     "static/media/geboortekaartje_US_achterkant.jpg": "/static/media/geboortekaartje_US_achterkant.c44c35e503796e62e454.jpg",
@@ -10,12 +10,12 @@
     "static/media/hugo.png": "/static/media/hugo.7c619c8b81cfd6ba8c01.png",
     "static/media/dragon.png": "/static/media/dragon.ef47d9e0628be6078171.png",
     "index.html": "/index.html",
-    "main.e74cff13.css.map": "/static/css/main.e74cff13.css.map",
-    "main.ada4f076.js.map": "/static/js/main.ada4f076.js.map",
+    "main.07ddaca8.css.map": "/static/css/main.07ddaca8.css.map",
+    "main.546a64b6.js.map": "/static/js/main.546a64b6.js.map",
     "453.02fbc45e.chunk.js.map": "/static/js/453.02fbc45e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e74cff13.css",
-    "static/js/main.ada4f076.js"
+    "static/css/main.07ddaca8.css",
+    "static/js/main.546a64b6.js"
   ]
 }
