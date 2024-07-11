@@ -3,6 +3,7 @@ import 'react-responsive-modal/styles.css';
 import './App.css'
 import { MainBg } from './components/MainBg';
 import { useState } from 'react';
+import { GiftWishList } from './components/GiftWishList';
 import babyCardFront from './assets/geboortekaartje_US_voorkant.jpg'
 import babyCardBack from './assets/geboortekaartje_US_achterkant.jpg'
 
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <MainBg>
       <div className="frame-border">
+        <GiftWishList />
         <div className='content'>
           <h2 className='h2'>You are invited to</h2>
           <h1 className='h1'>
@@ -55,6 +57,7 @@ export default function App() {
               <iframe className="map-iframe" title="Map - Ontmoetingscentrum Heilig Kruis" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20901.564420347142!2d5.320256407988882!3d50.92368186090528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c122266b5d396b%3A0xea6a3d3b888398f3!2sParochiaal%20%2FOntmoetingscentrum%20Heilig%20Kruis%20Runkst%20VZW!5e0!3m2!1sen!2suk!4v1720448981833!5m2!1sen!2suk" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             </Modal>
           </div>
+          {/* <GiftWishList /> */}
           <div className="original-baby-card-viewer">
             <i className="fa-solid fa-id-card"></i>
             <button onClick={() => setShowOriginalCard(true)} className='original-baby-card-viewer-button'>

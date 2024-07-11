@@ -1,0 +1,70 @@
+@keyframes colorAnimation {
+  0% {
+    color: var(--secondary-color);
+  }
+  50% {
+    color: var(--primary-color);
+  }
+  100% {
+    color: var(--secondary-color);
+  }
+}
+
+@keyframes shakeWithDelay {
+  from,
+  16%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  1.6%,
+  4.8%,
+  8%,
+  11.2%,
+  14.4% {
+    -webkit-transform: translate3d(-1px, -1px, -1px);
+    transform: translate3d(-1px, -1px, -1px);
+  }
+  3.2%,
+  6.4%,
+  9.6%,
+  12.8% {
+    -webkit-transform: translate3d(1px, 1px, 1px);
+    transform: translate3d(1px, 1px, 1px);
+  }
+}
+
+.wish-list-info-button {
+  background: none;
+  border: none;
+}
+
+.wish-list-info-button:hover {
+  cursor: pointer;
+}
+
+.gift-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  animation-name: shakeWithDelay;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.gift-icon .icon {
+  font-size: 2.5rem;
+  animation: colorAnimation 8s linear infinite;
+}
+
+@media screen and (max-width: 776px) {
+  .gift-icon .icon {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gift-icon .icon {
+    font-size: 1.5rem;
+  }
+}
